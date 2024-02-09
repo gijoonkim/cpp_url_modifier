@@ -59,6 +59,7 @@ if st.button("Modify URL"):
             copy_button = f"<button onclick=\"navigator.clipboard.writeText('{text_to_copy}')\">Copy to Clipboard</button>"
             st.markdown(copy_button, unsafe_allow_html=True)
             st.write('Coupang Shorten URL:', shorten_url)
+            st.write('AA:', expanded_url)
         else:
             st.write('No data found or invalid response with Coupang API.')
     else:
